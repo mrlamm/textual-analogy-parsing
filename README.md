@@ -9,11 +9,11 @@ One motivation for TAP is that it can be used to automatically plot quantitative
  
 a TAP parser outputs the following analogy frame:
 
-<p align="center"> <img src="figures/avm.png" width=30></p>
+<p align="center"> <img src="figures/avm.png" width=300></p>
 
 This can be visualized straighforwardly, by assigning elements of the *compared content* (in the curly brackets) to the x- and y- axes of a plot, and assigning elements of the *shared content* (in the outer-tier of the frame) to plot elements like titles and axis labels:
 
-<p align="center"> <img src="figures/plot.png" width=30></p>
+<p align="center"> <img src="figures/plot.png" width=300></p>
 
 ## Dataset
 
