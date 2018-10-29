@@ -13,7 +13,7 @@ a TAP parser outputs the following analogy frame:
 
 This can be visualized straighforwardly, by assigning elements of the *compared content* (in the curly brackets) to the x- and y- axes of a plot, and assigning elements of the *shared content* (in the outer-tier of the frame) to plot elements like titles and axis labels:
 
-<p align="center"> <img src="figures/plot.png" width=300></p>
+<p align="center"> <img src="figures/plot.png" width=200></p>
 
 ## Dataset
 
