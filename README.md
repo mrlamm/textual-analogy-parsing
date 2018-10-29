@@ -9,11 +9,11 @@ One motivation for TAP is that it can be used to automatically plot quantitative
  
 a TAP parser outputs the following analogy frame:
 
-<p align="center"> <img src="figures/avm.png"></p>
+<p align="center"> <img src="figures/avm.png" width=30></p>
 
 This can be visualized straighforwardly, by assigning elements of the *compared content* (in the curly brackets) to the x- and y- axes of a plot, and assigning elements of the *shared content* (in the outer-tier of the frame) to plot elements like titles and axis labels:
 
-<p align="center"> <img src="figures/plot.png"></p>
+<p align="center"> <img src="figures/plot.png" width=30></p>
 
 ## Dataset
 
@@ -25,5 +25,5 @@ Some statistics:
 
 <p align="center"> <img src="figures/dataset_stats.png"></p>
 
-Here, *Count* refers to the number of frames and *Length* refers to the number of values compared within a given frame. *Av(erage)* is the per-sentence average over a given dataset and *max(imum)* is the maximum over all setentences. *Tot(al)* is the total number of frames in a given dataset.
+Here, *Count* refers to the number of frames and *Length* refers to the number of values compared within a given frame. *Av(erage)* is the per-sentence average over a given dataset and *max(imum)* is the maximum over all sentences. *Tot(al)* is the total number of frames in a given dataset.
 
