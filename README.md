@@ -70,6 +70,6 @@ A legend of the different models that are built are as follows:
 ## Visualizing the output
 We also provide a utility that converts any output `.jsonl` file to the [brat standoff format](http://brat.nlplab.org/standoff.html). This allows for a pleasant visualization of the output, e.g.:
 
-<p align="center"> <img src="figures/brat.png" width=200></p>
+<p align="center"> <img src="figures/brat.png"></p>
 
 To use, simply run the command `python convert.py graph2standoff -i <predictions.jsonl> -o <prefix>`. The command will generate a `<prefix>.txt` and `<prefix>.ann` file that can be visualized by [brat annotation tool](http://brat.nlplab.org/).
