@@ -214,7 +214,7 @@ def pack_sequence(batch, pad=0):
 
     Returns list of BxTx*, list[int]
     """
-    lengths = torch.LongTensor([len(ex) for ex in batch])
+    lengths = [len(ex) for ex in batch]
     B, T = len(batch), max(lengths)
     shape = (B, T, *batch[0].size()[1:])
 
@@ -225,7 +225,7 @@ def pack_sequence(batch, pad=0):
         ret[i, :lengths[i], :] = ex.view(lengths[i], -1)
     ret = ret.view(*shape)
 
-    return ret, lengths
+    return ret, torch.LongTensor(lengths)
 
 def pack_sequence_2d(batch, pad=0):
     """
@@ -233,7 +233,7 @@ def pack_sequence_2d(batch, pad=0):
 
     Returns list of BxTxTx*, list[int]
     """
-    lengths = torch.LongTensor([len(ex) for ex in batch])
+    lengths = [len(ex) for ex in batch]
     B, T = len(batch), max(lengths)
     shape = (B, T, T, *batch[0].size()[2:])
 
@@ -245,7 +245,7 @@ def pack_sequence_2d(batch, pad=0):
         ret[i, :lengths[i], :lengths[i], :] = ex.view(lengths[i], lengths[i], -1)
     ret = ret.view(*shape)
 
-    return ret, lengths
+    return ret, torch.LongTensor(lengths)
 
 def pack_sequence_3d(batch, pad=0):
     """
@@ -253,7 +253,7 @@ def pack_sequence_3d(batch, pad=0):
 
     Returns a similar list of B TxTxd lists
     """
-    lengths = torch.LongTensor([len(ex) for ex in batch])
+    lengths = [len(ex) for ex in batch]
     B, T = len(batch), max(lengths)
     T_ = max(max(max(len(end) for end in start) for start in ex) for ex in batch)
     shape = (B, T, T, T_)
@@ -271,20 +271,7 @@ def pack_sequence_3d(batch, pad=0):
                 lengths_[i, start, end] = len(ex[start][end])
     ret = ret.view(*shape)
 
-    #ret = []
-    ### got rid of my local changes! :(
-    #for b in range(B):
-    #    length = len(batch[b])
-    #    ret.append([])
-    #    for i in range(T):
-    #        ret[-1].append([])
-    #        for j in range(T):
-    #            if i < length and j < length:
-    #                ret[b][i].append(batch[b][i][j])
-    #            else:
-    #                ret[b][i].append([])
-    #
-    return ret, lengths, lengths_
+    return ret, torch.LongTensor(lengths), lengths_
 
 
 def create_batch(batch, pad=0):

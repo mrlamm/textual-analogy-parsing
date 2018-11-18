@@ -10,7 +10,6 @@ import torch
 from torch.autograd import Variable
 from torch import nn
 from torch.nn import functional as F
-from torch.nn.init import xavier_normal
 from torchcrf import CRF
 
 from .schema import SentenceGraph
@@ -93,7 +92,7 @@ class Model(nn.Module):
         self.L.requires_grad = config["update_L"]
 
         self.L_ = nn.Embedding(config["feat_dim"], config["embed_dim"])
-        nn.init.normal(self.L_.weight)
+        nn.init.normal_(self.L_.weight)
         self.L_.requires_grad = config["update_L_"]
 
         input_feature_dim = \
@@ -119,7 +118,7 @@ class Model(nn.Module):
                              )
             for param in self.embed_W.parameters():
                 if len(param.size()) > 1:
-                    nn.init.orthogonal(param)
+                    nn.init.orthogonal_(param)
         elif config["embed_layer"] == "alstm":
             # (//2 because bidirectional)
             self.embed_h0 = Variable(torch.Tensor(2*config["n_layers"], config["hidden_dim"]//2))
@@ -138,13 +137,13 @@ class Model(nn.Module):
         # 3. Node model
         if config["node_model"] == "simple":
             self.node_W = nn.Linear(config["hidden_dim"], config["hidden_dim"])
-            xavier_normal(self.node_W.weight)
+            nn.init.xavier_normal_(self.node_W.weight)
             self.node_U = nn.Linear(config["hidden_dim"], config["output_node_dim"])
-            xavier_normal(self.node_U.weight)
+            nn.init.xavier_normal_(self.node_U.weight)
         elif config["node_model"] == "none":
             assert _check_logistic(config)
             self.node_U = nn.Linear(input_feature_dim, config["output_node_dim"])
-            xavier_normal(self.node_U.weight)
+            nn.init.xavier_normal_(self.node_U.weight)
         else:
             raise ValueError("Invalid node model {}".format(config["node_model"]))
 
@@ -154,7 +153,7 @@ class Model(nn.Module):
             pass
         elif config["decode_layer"] == "crf":
             self.crf = CRF(config["output_node_dim"])
-            nn.init.orthogonal(self.crf.transitions)
+            nn.init.orthogonal_(self.crf.transitions)
         else:
             raise ValueError("Invalid decode layer {}".format(config["decode_layer"]))
 
@@ -167,13 +166,13 @@ class Model(nn.Module):
         # 6. Edge model
         if config["edge_model"] == "simple":
             self.edge_W = nn.Linear(3*(config["hidden_dim"]+config["output_node_dim"]) + self.edge_feature_dim, config["hidden_dim"])
-            xavier_normal(self.edge_W.weight)
+            nn.init.xavier_normal_(self.edge_W.weight)
             self.edge_U = nn.Linear(config["hidden_dim"], config["output_arc_dim"])
-            xavier_normal(self.edge_U.weight)
+            nn.init.xavier_normal_(self.edge_U.weight)
         elif config["edge_model"] == "none":
             assert _check_logistic(config)
             self.edge_U = nn.Linear(3*(input_feature_dim+config["output_node_dim"]) + self.edge_feature_dim, config["output_arc_dim"])
-            xavier_normal(self.edge_U.weight)
+            nn.init.xavier_normal_(self.edge_U.weight)
         else:
             raise ValueError("Invalid edge model {}".format(config["edge_model"]))
 
