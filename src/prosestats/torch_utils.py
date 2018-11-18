@@ -304,7 +304,7 @@ def length_mask(x, lengths, use_cuda=False):
     if use_cuda:
         mask=mask.cuda()
 
-    return x[mask].view(-1, *shape[2:])
+    return x[mask.squeeze(-1)].view(-1, *shape[2:])
 
 def length_mask_2d(x, lengths, use_cuda=False):
     """
@@ -321,7 +321,7 @@ def length_mask_2d(x, lengths, use_cuda=False):
     if use_cuda:
         mask=mask.cuda()
 
-    return x[mask].view(-1, *shape[3:])
+    return x[mask.squeeze(-1)].view(-1, *shape[3:])
 
 def position_matrix(seq_len):
     """

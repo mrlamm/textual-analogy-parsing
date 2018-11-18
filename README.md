@@ -27,3 +27,12 @@ Some statistics:
 
 Here, *Count* refers to the number of frames and *Length* refers to the number of values compared within a given frame. *Av(erage)* is the per-sentence average over a given dataset and *max(imum)* is the maximum over all sentences. *Tot(al)* is the total number of frames in a given dataset.
 
+## Reproducing results
+
+### Installing Gurobi
+Our code using the excellent [Gurobi]() ILP solver to enforce TAP constraints (see Section 4 of the paper for more details here). The provided Makefile will download and install the right version of Gurobi, but you will need to obtain a Gurobi license from [here]().
+
+Note: our code _requires_ Python 3.6.
+
+We have provided our trained models in the `models/` directory. By running `make results`
+
