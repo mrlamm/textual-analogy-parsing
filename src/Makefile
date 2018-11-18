@@ -10,9 +10,9 @@ all: .results
 
 .results: results/neural_all.ilp.predictions.jsonl results/neural_all.ilp.score results/neural_none.ilp.predictions.jsonl results/neural_none.ilp.score results/neural_none.predictions.jsonl results/neural_none.score results/logistic_all.ilp.predictions.jsonl results/logistic_all.ilp.score results/logistic_all.predictions.jsonl results/logistic_all.score
 
-.models: state/neural_all state/neural_none state/logistic_all
+.models: $(MODELS)/neural_all $(MODELS)/neural_none $(MODELS)/logistic_all
 
-.ablation-models: .models state/neural_wo_ner state/neural_wo_deps state/neural_wo_crf
+.ablation-models: .models $(MODELS)/neural_wo_ner $(MODELS)/neural_wo_deps $(MODELS)/neural_wo_crf
 
 gurobi810:
 	wget https://packages.gurobi.com/8.1/gurobi8.1.0_linux64.tar.gz
@@ -53,46 +53,41 @@ results/%.score: results/%.predictions.jsonl $(TEST_DATA)
 
 .PRECIOUS: results/%.predictions.jsonl
 
+# Training section
+
 TRAIN_OPTIONS=-cvs 10 -cvi 10 -n 15 -dt $(TRAIN_DATA) -dT $(TEST_DATA)
 
-state/neural_all: $(TRAIN_DATA)
-	source .env/bin/activate
-	python main.py -mp $@ train $(TRAIN_OPTIONS) \
+$(MODELS)/neural_all: $(TRAIN_DATA)
+	source .env/bin/activate && python main.py -mp $@ train $(TRAIN_OPTIONS) \
 		-f word casing ner depparse depparse_copy depparse_dists depparse_path \
 	 	-x decode_layer=crf embed_layer=conv n_layers=2 node_model=simple edge_model=simple path_agg=max \
 	 	--save
 	python evaluate.py -G $(TRAIN_DATA) -g $@/predictions.json -o $@/predictions.score
 
-state/neural_none: $(TRAIN_DATA)
-	source .env/bin/activate
-	python main.py -mp $@ train $(TRAIN_OPTIONS) \
+$(MODELS)/neural_none: $(TRAIN_DATA)
+	source .env/bin/activate && python main.py -mp $@ train $(TRAIN_OPTIONS) \
 		-f word casing ner depparse depparse_copy depparse_dists depparse_path \
 		-x decode_layer=crf embed_layer=conv n_layers=2 node_model=simple edge_model=simple path_agg=simple \
 	 	--save
 	python evaluate.py -G $(TRAIN_DATA) -g $@/predictions.json -o $@/predictions.score
 
-state/logistic_all: $(TRAIN_DATA)
-	source .env/bin/activate
-	python main.py -mp $@ train $(TRAIN_OPTIONS) \
+$(MODELS)/logistic_all: $(TRAIN_DATA)
+	source .env/bin/activate && python main.py -mp $@ train $(TRAIN_OPTIONS) \
 		-f word casing lemma pos ner depparse depparse_copy depparse_dists depparse_path \
 	 	-x decode_layer=crf embed_layer=none node_model=none edge_model=none path_agg=none update_L_=false \
 	 	--save
 	python evaluate.py -G $(TRAIN_DATA) -g $@/predictions.json -o $@/predictions.score
 
-state/neural_wo_ner: $(TRAIN_DATA)
-	source .env/bin/activate
-	python main.py -mp $@ train $(TRAIN_OPTIONS) \
+$(MODELS)/neural_wo_ner: $(TRAIN_DATA)
+	source .env/bin/activate && python main.py -mp $@ train $(TRAIN_OPTIONS) \
 	 	-f word casing depparse depparse_copy depparse_dists depparse_path \
 	 	-x decode_layer=crf embed_layer=conv n_layers=2 node_model=simple edge_model=simple path_agg=max \
 		--save
 	python evaluate.py -G $(TRAIN_DATA) -g $@/predictions.json -o $@/predictions.score
 
-state/neural_wo_deps: $(TRAIN_DATA)
-	source .env/bin/activate
-	python main.py -mp $@ train $(TRAIN_OPTIONS) \
+$(MODELS)/neural_wo_deps: $(TRAIN_DATA)
+	source .env/bin/activate && python main.py -mp $@ train $(TRAIN_OPTIONS) \
 		-f word casing ner \
 	 	-x decode_layer=crf embed_layer=conv n_layers=2 node_model=simple edge_model=simple path_agg=none \
 	 	--save
 	python evaluate.py -G $(TRAIN_DATA) -g $@/predictions.json -o $@/predictions.score
-
-

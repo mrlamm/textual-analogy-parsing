@@ -32,5 +32,5 @@ tqdm==4.19.4
 traitlets==4.3.2
 urllib3==1.22
 wcwidth==0.1.7
-gurobipy==8.1.0
 pytorch-crf==0.5.0
+#gurobipy==8.1.0
