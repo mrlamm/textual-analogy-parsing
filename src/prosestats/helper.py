@@ -74,7 +74,7 @@ def test_vectorize():
     id2tok = ["a", "green", "cats", "ham", "like", UNK, P_CASE + "aa", P_CASE + "aA", P_CASE + "AA", P_CASE + "Aa", START_TOKEN, END_TOKEN]
     tok2id = {t: i for i, t in enumerate(id2tok)}
 
-    helper = ModelHelper(tok2id, None, None)
+    helper = ModelHelper(tok2id, None, None, None, None, ["word"])
     assert helper.id2tok == id2tok
     # TODO: fix this test.
     #s = "Green cats like ham".split()
@@ -355,8 +355,8 @@ class ModelHelper(object):
 
         return cls(tok2id, feat2id, lbl2id, node_counts, edge_counts, features)
 
-    def load_embeddings(self, vocab_file, vectors_file):
-        wvecs = load_word_vector_mapping(vocab_file, vectors_file)
+    def load_embeddings(self, fstream):
+        wvecs = load_word_vector_mapping(fstream)
         embed_size = len(next(iter(wvecs.values())))
 
         embeddings = np.array(np.random.randn(len(self.tok2id) + 1, embed_size), dtype=np.float32)
@@ -370,8 +370,8 @@ class ModelHelper(object):
 
         return embeddings
 
-    def add_embeddings(self, vocab_file, vectors_file):
-        self.embeddings = self.load_embeddings(vocab_file, vectors_file)
+    def add_embeddings(self, fstream):
+        self.embeddings = self.load_embeddings(fstream)
 
 def load_and_preprocess_data(args):
     """
@@ -387,22 +387,23 @@ def load_and_preprocess_data(args):
     test_graphs = [prune_graph(graph) for graph in test_graphs]
 
     helper = ModelHelper.build(train_graphs, features=args.features, test_data=test_graphs)
-    helper.add_embeddings(args.embeddings_vocab, args.embeddings_vectors)
+    helper.add_embeddings(args.embeddings)
 
     return helper, train_graphs
 
 def test_load_and_preprocess_data():
     class Object:
         data_train = open(os.path.join(os.path.dirname(__file__), "testdata", "test.json"))
-        embeddings_vocab = open(os.path.join(os.path.dirname(__file__), "testdata", "test.vocab"))
-        embeddings_vectors = open(os.path.join(os.path.dirname(__file__), "testdata", "test.vectors"))
+        data_test = open(os.path.join(os.path.dirname(__file__), "testdata", "test.json"))
+        embeddings = open(os.path.join(os.path.dirname(__file__), "testdata", "test.vectors"))
+        features = ModelHelper.FEATURES
     args = Object()
     helper, train_graphs = load_and_preprocess_data(args)
 
     data = helper.vectorize(train_graphs)
 
     # make sure the lengths all match
-    for x, y, z in data:
+    for x, y, q, z in data:
         assert x.shape[0] == y.shape[0]
         assert x.shape[0] == z.shape[0]
         assert z.shape[0] == z.shape[1]

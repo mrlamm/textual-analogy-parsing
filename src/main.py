@@ -175,7 +175,7 @@ def do_run(args):
         config = json.load(f)
     with open(os.path.join(args.model_path, "helper.pkl"), "rb") as f:
         helper = ModelHelper.load(f)
-        helper.add_embeddings(args.embeddings_vocab, args.embeddings_vectors)
+        helper.add_embeddings(args.embeddings)
 
     model = Model(config, helper.embeddings)
     with open(os.path.join(args.model_path, "model.pkl"), "rb") as f:
@@ -193,7 +193,7 @@ def do_shell(args):
         config = json.load(f)
     with open(os.path.join(args.model_path, "helper.pkl"), "rb") as f:
         helper = ModelHelper.load(f)
-        helper.add_embeddings(args.embeddings_vocab, args.embeddings_vectors)
+        helper.add_embeddings(args.embeddings)
 
     model = Model(config, helper.embeddings)
     with open(os.path.join(args.model_path, "model.pkl"), "rb") as f:
@@ -231,8 +231,7 @@ if __name__ == "__main__":
     # NO LONGER NEEDED vv
     #parser.add_argument('-m', '--model', choices=["WindowModel", "BiLSTMModel", "BiLSTMCRFModel", "ConvolutionalSpansModel"], default="WindowModel", help="Which model to use?")
     parser.add_argument('-mp', '--model-path', default="out", help="Where to load/save models.")
-    parser.add_argument('-evo', '--embeddings-vocab',   type=argparse.FileType('r'), default="data/embeddings.vocab",   help="Path to word embedding vocabulary")
-    parser.add_argument('-eve', '--embeddings-vectors', type=argparse.FileType('r'), default="data/embeddings.vectors", help="Path to word vectors")
+    parser.add_argument('-eve', '--embeddings',   type=argparse.FileType('r'), default="glove/glove.6B.50d.txt",   help="Path to glove word vectors")
     parser.set_defaults(func=None)
 
     subparsers = parser.add_subparsers()
