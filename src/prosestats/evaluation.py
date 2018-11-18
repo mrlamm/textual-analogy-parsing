@@ -264,70 +264,12 @@ class Scorer(object):
         self._update_span_edge_metrics(gold_spans, gold_edges, guess_spans, guess_edges, with_matching=True)
 
 
-#def test_scorer_frames():
-#    frames = Frames.from_json({
-#        'tokens': ['New', 'England', 'Electric', ',', 'based', 'in', 'Westborough', ',', 'Mass.', ',', 'had', 'offered', '$', '2', 'billion', 'to', 'acquire', 'PS', 'of', 'New', 'Hampshire', ',', 'well', 'below', 'the', '$', '2.29', 'billion', 'value', 'United', 'Illuminating', 'places', 'on', 'its', 'bid', 'and', 'the', '$', '2.25', 'billion', 'Northeast', 'says', 'its', 'bid', 'is', 'worth', '.'],
-#        'frames': [{
-#            'theme': [[11, 12], [34, 35], [43, 44]],
-#            'instances': [
-#                {'value': [13, 15], 'label': [0, 3]},
-#                {'value': [26, 28], 'label': [29, 31]},
-#                {'value': [38, 40], 'label': [40, 41]}],
-#            'theme_mod': [[15, 21]],
-#            'manner': 'equals',
-#            'unit': [[12, 13], [25, 26], [37, 38]]
-#            }],
-#        'nInstances': 3,
-#        'nFrames': 1
-#        })
-#
-#    frames_ = Frames.from_json({
-#        'tokens': ['New', 'England', 'Electric', ',', 'based', 'in', 'Westborough', ',', 'Mass.', ',', 'had', 'offered', '$', '2', 'billion', 'to', 'acquire', 'PS', 'of', 'New', 'Hampshire', ',', 'well', 'below', 'the', '$', '2.29', 'billion', 'value', 'United', 'Illuminating', 'places', 'on', 'its', 'bid', 'and', 'the', '$', '2.25', 'billion', 'Northeast', 'says', 'its', 'bid', 'is', 'worth', '.'],
-#        'frames': [{
-#            'theme': [[34, 35], [43, 44]],
-#            'instances': [
-#                {'value': [13, 15], 'label': [0, 2]},
-#                {'value': [38, 40], 'label': [39, 41]}],
-#            'theme_mod': [[15, 21]],
-#            'manner': 'equals',
-#            'unit': [[25, 26], [37, 38]]
-#            }],
-#        'nInstances': 2,
-#        'nFrames': 1
-#        })
-#    graph = convert_frames_to_graph(frames)
-#    graph_ = convert_frames_to_graph(frames_)
-#
-#    scorer = Scorer()
-#    scorer.update(graph, graph)
-#    assert scorer.state["token_node_all"].f1() == 1.0
-#    assert scorer.state["token_node_core"].f1() == 1.0
-#    assert scorer.state["span_node_all"].f1() == 1.0
-#    assert scorer.state["span_node_core"].f1() == 1.0
-#    assert scorer.state["token_edge"].f1() == 1.0
-#    assert scorer.state["span_bcubed_all"].f1() == 1.0
-#    assert scorer.state["span_bcubed_core"].f1() == 1.0
-#
-#    scorer.clear()
-#    scorer.update(graph, graph_)
-#    assert np.allclose(scorer.state["token_node_all"].f1(), 0.83, 5e-2)
-#    assert np.allclose(scorer.state["token_node_core"].f1(), 0.87, 5e-2)
-#    assert np.allclose(scorer.state["span_node_all"].f1(), 0.69, 5e-2)
-#    assert np.allclose(scorer.state["span_node_core"].f1(), 0.85, 5e-2)
-#    assert np.allclose(scorer.state["token_edge"].f1(), 0.87, 5e-2)
-#    assert np.allclose(scorer.state["span_bcubed_all"].f1(), 0.64, 5e-2)
-#    assert np.allclose(scorer.state["span_bcubed_core"].f1(), 0.67, 5e-2)
-
 def test_scorer_graph():
     np.random.seed(42)
     gold_ys = np.random.rand(5, len(SentenceGraph.NODE_LABELS)+1)
     gold_zs = np.random.rand(5, 5, len(SentenceGraph.EDGE_LABELS)+1)
     guess_ys = gold_ys + 0.1 * np.random.rand(5, len(SentenceGraph.NODE_LABELS)+1)
     guess_zs = gold_zs + 0.1 * np.random.rand(5, 5, len(SentenceGraph.EDGE_LABELS)+1)
-
-    # TODO: THIS IS A KNOWN BUG. I need to change the shape of gold_ys
-    # and gold_zs to be consistent with torch
-
 
     scorer = Scorer()
     scorer.update_with_tokens(gold_ys.argmax(-1), gold_zs.argmax(-1), gold_ys, gold_zs)

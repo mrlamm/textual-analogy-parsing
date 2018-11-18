@@ -370,45 +370,7 @@ def compute_task_worker_interactions(data, alpha=0.1):
         "mean": mean,
         "worker-std": np.std(worker_coefs),
         "task-std": np.std(hit_coefs),
-#        "workers": dict(zip(workers, worker_coefs)),
-#        "tasks": dict(zip(hits, mean + hit_coefs)),
         "residual-std": np.std(residuals),
         }
 
     return ret
-
-#def compute_task_worker_interactions(data):
-#    """
-#    Using a mixed-effects model: y = Wx + Za jk
-#    """
-#    data = flatten_dict(data)
-#    keys = sorted(data.keys())
-#    workers, hits = zip(*keys)
-#    workers, hits = sorted(set(workers)), sorted(set(hits))
-#
-#    Y = np.zeros(len(keys))
-#    X = np.zeros((len(keys), len(workers) + len(hits))) # + len(keys)-1))
-#
-#    for i, (worker, hit) in enumerate(keys):
-#        Y[i] = data[worker,hit]
-#        wi, hi, ki = workers.index(worker), hits.index(hit) , i
-#
-#        #if wi == len(workers)-1:
-#        #    X[i, 0:len(workers)-1] = -1
-#        #else:
-#        X[i, wi] = 1
-#
-#        #if hi == len(hits)-1:
-#        #    X[i, len(workers)-1:len(workers)-1+len(hits)-1] = -1
-#        #else:
-#        X[i, len(workers) + hi] = 1
-#
-#        #if ki == len(keys)-1:
-#        #    X[i, len(workers)-1+len(hits)-1:] = -1
-#        #else:
-#        #    X[i, len(workers)-1+len(hits)-1 + hi] = 1
-#    mu = Y.mean()
-#    Y = Y - mu
-#
-#    return mu, X, Y, workers, hits, keys
-

@@ -182,7 +182,7 @@ def test_agglomerative_clustering():
     print(final_clusters)
 
 
-def typing_constraints_test():
+def test_typing_constraints():
 
     analogy = "analogy"
     equiv = "equivalence"
@@ -215,7 +215,7 @@ def typing_constraints_test():
     print("output", e)
 
 
-def typing_plus_invalid_values_constraints_test():
+def test_typing_plus_invalid_values_constraints():
 
     analogy = "analogy"
     equiv = "equivalence"
