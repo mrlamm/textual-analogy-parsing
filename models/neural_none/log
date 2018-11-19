@@ -1,0 +1,723 @@
+Loading training data...
+Done. Read 1013 sentences
+Built dictionary for 3969 tokens and 5 features.
+Node counts: [14583.0, 583.0, 368.0, 253.0, 518.0, 616.0, 2754.0, 338.0, 3102.0, 3442.0, 8322.0, 951.0]
+Edge counts: [72963.0, 6388.0, 9597.0, 969.0, 0.0]
+Initialized embeddings.
+Train 0 loss: 0.65
+Train 0 token_node=21.07 token_edge=20.04 span_node=20.29 span_edge=22.96 span_node_nomatch=12.24 span_edge_nomatch=13.39
+Dev 0 Loss: 3.47
+Dev 0 token_node=25.77 token_edge=31.24 span_node=26.50 span_edge=39.72 span_node_nomatch=17.43 span_edge_nomatch=23.30
+Updating best epoch to be 0
+Train 1 loss: 0.51
+Train 1 token_node=50.77 token_edge=42.48 span_node=39.32 span_edge=41.18 span_node_nomatch=33.44 span_edge_nomatch=29.81
+Dev 1 Loss: 3.23
+Dev 1 token_node=41.31 token_edge=44.81 span_node=37.13 span_edge=49.37 span_node_nomatch=31.04 span_edge_nomatch=36.60
+Updating best epoch to be 1
+Train 2 loss: 0.48
+Train 2 token_node=59.66 token_edge=52.52 span_node=46.28 span_edge=51.62 span_node_nomatch=41.53 span_edge_nomatch=42.15
+Dev 2 Loss: 2.60
+Dev 2 token_node=49.64 token_edge=45.82 span_node=42.67 span_edge=51.72 span_node_nomatch=37.19 span_edge_nomatch=41.16
+Updating best epoch to be 2
+Train 3 loss: 0.51
+Train 3 token_node=62.34 token_edge=54.91 span_node=48.08 span_edge=55.14 span_node_nomatch=43.69 span_edge_nomatch=46.04
+Dev 3 Loss: 3.38
+Dev 3 token_node=40.15 token_edge=30.29 span_node=36.83 span_edge=45.72 span_node_nomatch=29.93 span_edge_nomatch=30.83
+Train 4 loss: 0.29
+Train 4 token_node=64.79 token_edge=58.24 span_node=50.00 span_edge=60.16 span_node_nomatch=46.33 span_edge_nomatch=52.84
+Dev 4 Loss: 2.37
+Dev 4 token_node=52.39 token_edge=53.35 span_node=44.74 span_edge=59.66 span_node_nomatch=40.37 span_edge_nomatch=48.99
+Updating best epoch to be 4
+Train 5 loss: 0.37
+Train 5 token_node=66.43 token_edge=60.42 span_node=51.00 span_edge=62.07 span_node_nomatch=47.49 span_edge_nomatch=54.83
+Dev 5 Loss: 2.14
+Dev 5 token_node=54.03 token_edge=36.32 span_node=46.39 span_edge=49.26 span_node_nomatch=42.52 span_edge_nomatch=42.39
+Updating best epoch to be 5
+Train 6 loss: 0.26
+Train 6 token_node=68.61 token_edge=62.98 span_node=52.40 span_edge=64.84 span_node_nomatch=49.03 span_edge_nomatch=58.05
+Dev 6 Loss: 2.27
+Dev 6 token_node=56.73 token_edge=43.62 span_node=46.11 span_edge=50.24 span_node_nomatch=39.62 span_edge_nomatch=39.85
+Train 7 loss: 0.38
+Train 7 token_node=70.26 token_edge=64.00 span_node=53.01 span_edge=66.23 span_node_nomatch=50.01 span_edge_nomatch=59.91
+Dev 7 Loss: 2.27
+Dev 7 token_node=51.28 token_edge=47.03 span_node=44.08 span_edge=61.46 span_node_nomatch=36.98 span_edge_nomatch=42.80
+Train 8 loss: 0.22
+Train 8 token_node=71.03 token_edge=66.00 span_node=53.27 span_edge=68.00 span_node_nomatch=50.18 span_edge_nomatch=61.01
+Dev 8 Loss: 1.97
+Dev 8 token_node=59.05 token_edge=43.99 span_node=49.34 span_edge=52.40 span_node_nomatch=43.85 span_edge_nomatch=44.47
+Updating best epoch to be 8
+Train 9 loss: 0.24
+Train 9 token_node=73.54 token_edge=66.44 span_node=54.80 span_edge=68.76 span_node_nomatch=51.85 span_edge_nomatch=62.60
+Dev 9 Loss: 2.01
+Dev 9 token_node=54.15 token_edge=56.63 span_node=46.51 span_edge=62.17 span_node_nomatch=42.87 span_edge_nomatch=55.92
+Train 10 loss: 0.21
+Train 10 token_node=74.08 token_edge=70.36 span_node=54.86 span_edge=71.06 span_node_nomatch=51.87 span_edge_nomatch=64.84
+Dev 10 Loss: 1.83
+Dev 10 token_node=60.77 token_edge=58.14 span_node=48.53 span_edge=65.77 span_node_nomatch=43.30 span_edge_nomatch=56.25
+Updating best epoch to be 10
+Train 11 loss: 0.15
+Train 11 token_node=76.13 token_edge=71.11 span_node=55.76 span_edge=71.83 span_node_nomatch=53.26 span_edge_nomatch=66.19
+Dev 11 Loss: 1.95
+Dev 11 token_node=58.58 token_edge=59.95 span_node=47.53 span_edge=68.16 span_node_nomatch=40.30 span_edge_nomatch=52.92
+Train 12 loss: 0.14
+Train 12 token_node=76.73 token_edge=72.57 span_node=56.11 span_edge=74.32 span_node_nomatch=53.68 span_edge_nomatch=68.72
+Dev 12 Loss: 1.84
+Dev 12 token_node=58.12 token_edge=63.47 span_node=47.69 span_edge=69.18 span_node_nomatch=42.51 span_edge_nomatch=57.91
+Train 13 loss: 0.14
+Train 13 token_node=78.88 token_edge=72.38 span_node=57.01 span_edge=73.17 span_node_nomatch=54.47 span_edge_nomatch=67.57
+Dev 13 Loss: 1.87
+Dev 13 token_node=59.06 token_edge=61.34 span_node=47.35 span_edge=69.05 span_node_nomatch=41.58 span_edge_nomatch=56.20
+Train 14 loss: 0.17
+Train 14 token_node=80.54 token_edge=74.87 span_node=57.74 span_edge=75.73 span_node_nomatch=55.13 span_edge_nomatch=70.22
+Dev 14 Loss: 2.16
+Dev 14 token_node=56.46 token_edge=62.23 span_node=46.48 span_edge=68.38 span_node_nomatch=41.92 span_edge_nomatch=58.79
+Restoring params to best epoch (10), with loss=1.83
+Train 0 loss: 0.51
+Train 0 token_node=29.11 token_edge=23.95 span_node=26.33 span_edge=24.61 span_node_nomatch=18.82 span_edge_nomatch=14.86
+Dev 0 Loss: 2.94
+Dev 0 token_node=51.48 token_edge=19.61 span_node=38.42 span_edge=18.16 span_node_nomatch=33.72 span_edge_nomatch=14.19
+Updating best epoch to be 0
+Train 1 loss: 0.41
+Train 1 token_node=55.78 token_edge=49.23 span_node=42.71 span_edge=46.79 span_node_nomatch=37.40 span_edge_nomatch=34.30
+Dev 1 Loss: 2.89
+Dev 1 token_node=51.11 token_edge=44.33 span_node=39.97 span_edge=48.02 span_node_nomatch=32.59 span_edge_nomatch=33.22
+Updating best epoch to be 1
+Train 2 loss: 0.30
+Train 2 token_node=61.41 token_edge=56.51 span_node=46.84 span_edge=55.34 span_node_nomatch=42.74 span_edge_nomatch=45.08
+Dev 2 Loss: 2.64
+Dev 2 token_node=57.64 token_edge=52.86 span_node=43.81 span_edge=54.82 span_node_nomatch=37.85 span_edge_nomatch=43.33
+Updating best epoch to be 2
+Train 3 loss: 0.24
+Train 3 token_node=63.62 token_edge=60.94 span_node=49.12 span_edge=60.71 span_node_nomatch=45.08 span_edge_nomatch=51.50
+Dev 3 Loss: 2.57
+Dev 3 token_node=55.29 token_edge=52.18 span_node=42.97 span_edge=57.73 span_node_nomatch=34.06 span_edge_nomatch=40.89
+Updating best epoch to be 3
+Train 4 loss: 0.44
+Train 4 token_node=66.05 token_edge=62.17 span_node=50.68 span_edge=62.48 span_node_nomatch=46.93 span_edge_nomatch=53.45
+Dev 4 Loss: 2.49
+Dev 4 token_node=55.93 token_edge=47.74 span_node=45.19 span_edge=53.24 span_node_nomatch=34.11 span_edge_nomatch=36.88
+Updating best epoch to be 4
+Train 5 loss: 0.19
+Train 5 token_node=67.75 token_edge=65.80 span_node=51.95 span_edge=67.30 span_node_nomatch=48.52 span_edge_nomatch=59.44
+Dev 5 Loss: 1.98
+Dev 5 token_node=61.03 token_edge=57.73 span_node=47.46 span_edge=62.04 span_node_nomatch=44.44 span_edge_nomatch=51.70
+Updating best epoch to be 5
+Train 6 loss: 0.24
+Train 6 token_node=70.47 token_edge=67.52 span_node=52.81 span_edge=67.70 span_node_nomatch=49.35 span_edge_nomatch=60.02
+Dev 6 Loss: 1.98
+Dev 6 token_node=62.93 token_edge=56.25 span_node=48.17 span_edge=60.37 span_node_nomatch=44.74 span_edge_nomatch=51.96
+Updating best epoch to be 6
+Train 7 loss: 0.27
+Train 7 token_node=71.79 token_edge=69.24 span_node=53.79 span_edge=70.13 span_node_nomatch=50.83 span_edge_nomatch=63.17
+Dev 7 Loss: 2.00
+Dev 7 token_node=61.32 token_edge=58.13 span_node=47.39 span_edge=62.58 span_node_nomatch=42.68 span_edge_nomatch=50.59
+Train 8 loss: 0.20
+Train 8 token_node=73.75 token_edge=71.74 span_node=54.71 span_edge=72.36 span_node_nomatch=51.43 span_edge_nomatch=65.36
+Dev 8 Loss: 2.05
+Dev 8 token_node=64.82 token_edge=45.74 span_node=48.90 span_edge=54.19 span_node_nomatch=44.59 span_edge_nomatch=45.81
+Train 9 loss: 0.26
+Train 9 token_node=75.37 token_edge=70.97 span_node=55.77 span_edge=72.37 span_node_nomatch=52.80 span_edge_nomatch=65.58
+Dev 9 Loss: 2.03
+Dev 9 token_node=58.00 token_edge=53.56 span_node=45.09 span_edge=59.29 span_node_nomatch=41.70 span_edge_nomatch=49.76
+Train 10 loss: 0.24
+Train 10 token_node=75.96 token_edge=72.50 span_node=55.83 span_edge=73.43 span_node_nomatch=53.11 span_edge_nomatch=66.93
+Dev 10 Loss: 2.17
+Dev 10 token_node=63.60 token_edge=58.74 span_node=46.29 span_edge=60.26 span_node_nomatch=42.40 span_edge_nomatch=47.97
+Train 11 loss: 0.12
+Train 11 token_node=77.79 token_edge=73.28 span_node=56.82 span_edge=74.09 span_node_nomatch=54.12 span_edge_nomatch=68.26
+Dev 11 Loss: 2.07
+Dev 11 token_node=64.49 token_edge=61.35 span_node=47.97 span_edge=65.69 span_node_nomatch=43.01 span_edge_nomatch=53.83
+Train 12 loss: 0.18
+Train 12 token_node=78.87 token_edge=75.43 span_node=57.10 span_edge=75.40 span_node_nomatch=54.58 span_edge_nomatch=69.69
+Dev 12 Loss: 2.06
+Dev 12 token_node=63.27 token_edge=62.05 span_node=48.05 span_edge=66.75 span_node_nomatch=43.19 span_edge_nomatch=54.42
+Train 13 loss: 0.12
+Train 13 token_node=80.66 token_edge=77.46 span_node=58.06 span_edge=77.47 span_node_nomatch=55.48 span_edge_nomatch=71.83
+Dev 13 Loss: 1.84
+Dev 13 token_node=64.25 token_edge=60.41 span_node=50.42 span_edge=68.79 span_node_nomatch=45.89 span_edge_nomatch=57.57
+Updating best epoch to be 13
+Train 14 loss: 0.10
+Train 14 token_node=80.89 token_edge=77.31 span_node=58.29 span_edge=78.23 span_node_nomatch=55.92 span_edge_nomatch=72.74
+Dev 14 Loss: 1.87
+Dev 14 token_node=65.19 token_edge=55.31 span_node=49.75 span_edge=63.97 span_node_nomatch=46.02 span_edge_nomatch=54.82
+Restoring params to best epoch (13), with loss=1.84
+Train 0 loss: 0.54
+Train 0 token_node=32.14 token_edge=19.77 span_node=24.31 span_edge=19.25 span_node_nomatch=16.82 span_edge_nomatch=11.14
+Dev 0 Loss: 1.77
+Dev 0 token_node=51.81 token_edge=28.99 span_node=39.68 span_edge=34.17 span_node_nomatch=35.15 span_edge_nomatch=24.56
+Updating best epoch to be 0
+Train 1 loss: 0.46
+Train 1 token_node=58.83 token_edge=43.74 span_node=44.77 span_edge=44.27 span_node_nomatch=39.65 span_edge_nomatch=33.74
+Dev 1 Loss: 1.37
+Dev 1 token_node=60.02 token_edge=51.27 span_node=46.10 span_edge=51.01 span_node_nomatch=41.80 span_edge_nomatch=41.43
+Updating best epoch to be 1
+Train 2 loss: 0.35
+Train 2 token_node=63.97 token_edge=55.67 span_node=48.85 span_edge=55.09 span_node_nomatch=44.52 span_edge_nomatch=45.62
+Dev 2 Loss: 1.22
+Dev 2 token_node=64.28 token_edge=51.03 span_node=49.49 span_edge=50.91 span_node_nomatch=44.40 span_edge_nomatch=41.75
+Updating best epoch to be 2
+Train 3 loss: 0.28
+Train 3 token_node=67.34 token_edge=59.16 span_node=50.39 span_edge=58.75 span_node_nomatch=46.42 span_edge_nomatch=49.61
+Dev 3 Loss: 1.08
+Dev 3 token_node=63.49 token_edge=49.91 span_node=48.65 span_edge=57.05 span_node_nomatch=44.49 span_edge_nomatch=48.02
+Updating best epoch to be 3
+Train 4 loss: 0.23
+Train 4 token_node=69.46 token_edge=61.85 span_node=52.14 span_edge=61.80 span_node_nomatch=48.67 span_edge_nomatch=54.06
+Dev 4 Loss: 1.11
+Dev 4 token_node=58.20 token_edge=49.10 span_node=47.29 span_edge=58.41 span_node_nomatch=41.46 span_edge_nomatch=47.75
+Train 5 loss: 0.20
+Train 5 token_node=71.49 token_edge=63.87 span_node=53.13 span_edge=63.95 span_node_nomatch=49.78 span_edge_nomatch=56.80
+Dev 5 Loss: 0.88
+Dev 5 token_node=63.28 token_edge=55.71 span_node=49.24 span_edge=60.76 span_node_nomatch=43.51 span_edge_nomatch=47.07
+Updating best epoch to be 5
+Train 6 loss: 0.28
+Train 6 token_node=73.51 token_edge=66.72 span_node=54.15 span_edge=66.60 span_node_nomatch=50.95 span_edge_nomatch=59.54
+Dev 6 Loss: 0.83
+Dev 6 token_node=63.39 token_edge=58.42 span_node=50.80 span_edge=63.49 span_node_nomatch=45.01 span_edge_nomatch=52.09
+Updating best epoch to be 6
+Train 7 loss: 0.24
+Train 7 token_node=74.88 token_edge=68.39 span_node=54.81 span_edge=68.60 span_node_nomatch=51.69 span_edge_nomatch=61.77
+Dev 7 Loss: 0.75
+Dev 7 token_node=64.37 token_edge=61.32 span_node=51.42 span_edge=64.20 span_node_nomatch=47.32 span_edge_nomatch=55.25
+Updating best epoch to be 7
+Train 8 loss: 0.19
+Train 8 token_node=76.53 token_edge=70.30 span_node=55.73 span_edge=70.17 span_node_nomatch=52.73 span_edge_nomatch=63.85
+Dev 8 Loss: 0.76
+Dev 8 token_node=67.65 token_edge=53.75 span_node=51.74 span_edge=62.40 span_node_nomatch=48.36 span_edge_nomatch=55.04
+Train 9 loss: 0.17
+Train 9 token_node=77.47 token_edge=70.57 span_node=56.13 span_edge=71.12 span_node_nomatch=53.40 span_edge_nomatch=65.12
+Dev 9 Loss: 0.85
+Dev 9 token_node=68.64 token_edge=63.88 span_node=52.53 span_edge=68.36 span_node_nomatch=49.23 span_edge_nomatch=60.26
+Train 10 loss: 0.12
+Train 10 token_node=79.00 token_edge=71.79 span_node=56.83 span_edge=71.97 span_node_nomatch=53.96 span_edge_nomatch=65.51
+Dev 10 Loss: 0.85
+Dev 10 token_node=67.99 token_edge=64.50 span_node=51.66 span_edge=70.09 span_node_nomatch=47.99 span_edge_nomatch=61.73
+Train 11 loss: 0.16
+Train 11 token_node=80.09 token_edge=73.92 span_node=57.63 span_edge=74.07 span_node_nomatch=55.13 span_edge_nomatch=68.35
+Dev 11 Loss: 0.96
+Dev 11 token_node=66.19 token_edge=63.53 span_node=52.51 span_edge=69.45 span_node_nomatch=48.87 span_edge_nomatch=61.53
+Train 12 loss: 0.16
+Train 12 token_node=81.48 token_edge=75.14 span_node=58.26 span_edge=73.52 span_node_nomatch=55.92 span_edge_nomatch=68.35
+Dev 12 Loss: 0.81
+Dev 12 token_node=67.07 token_edge=66.29 span_node=51.14 span_edge=70.88 span_node_nomatch=46.86 span_edge_nomatch=60.64
+Train 13 loss: 0.12
+Train 13 token_node=83.22 token_edge=76.50 span_node=59.08 span_edge=76.62 span_node_nomatch=56.67 span_edge_nomatch=71.50
+Dev 13 Loss: 0.79
+Dev 13 token_node=68.14 token_edge=64.66 span_node=52.60 span_edge=69.91 span_node_nomatch=48.35 span_edge_nomatch=60.47
+Train 14 loss: 0.06
+Train 14 token_node=83.94 token_edge=76.41 span_node=59.03 span_edge=76.55 span_node_nomatch=56.78 span_edge_nomatch=71.51
+Dev 14 Loss: 0.77
+Dev 14 token_node=68.94 token_edge=59.83 span_node=52.74 span_edge=68.68 span_node_nomatch=48.04 span_edge_nomatch=59.69
+Restoring params to best epoch (7), with loss=0.75
+Train 0 loss: 0.40
+Train 0 token_node=37.33 token_edge=20.39 span_node=29.39 span_edge=20.52 span_node_nomatch=20.02 span_edge_nomatch=11.74
+Dev 0 Loss: 2.35
+Dev 0 token_node=49.52 token_edge=33.65 span_node=39.92 span_edge=34.67 span_node_nomatch=36.07 span_edge_nomatch=24.12
+Updating best epoch to be 0
+Train 1 loss: 0.31
+Train 1 token_node=60.64 token_edge=44.70 span_node=44.76 span_edge=41.97 span_node_nomatch=39.90 span_edge_nomatch=32.46
+Dev 1 Loss: 2.02
+Dev 1 token_node=53.38 token_edge=41.22 span_node=44.84 span_edge=47.85 span_node_nomatch=39.71 span_edge_nomatch=34.35
+Updating best epoch to be 1
+Train 2 loss: 0.35
+Train 2 token_node=65.73 token_edge=54.85 span_node=48.27 span_edge=51.88 span_node_nomatch=43.87 span_edge_nomatch=42.01
+Dev 2 Loss: 1.78
+Dev 2 token_node=55.64 token_edge=46.67 span_node=46.48 span_edge=52.85 span_node_nomatch=40.43 span_edge_nomatch=41.50
+Updating best epoch to be 2
+Train 3 loss: 0.23
+Train 3 token_node=68.36 token_edge=60.39 span_node=50.65 span_edge=57.70 span_node_nomatch=46.49 span_edge_nomatch=49.12
+Dev 3 Loss: 1.53
+Dev 3 token_node=60.81 token_edge=54.80 span_node=48.86 span_edge=57.96 span_node_nomatch=44.60 span_edge_nomatch=46.23
+Updating best epoch to be 3
+Train 4 loss: 0.26
+Train 4 token_node=72.04 token_edge=62.61 span_node=52.75 span_edge=60.76 span_node_nomatch=48.77 span_edge_nomatch=52.75
+Dev 4 Loss: 1.43
+Dev 4 token_node=62.81 token_edge=51.01 span_node=49.81 span_edge=57.43 span_node_nomatch=44.38 span_edge_nomatch=46.40
+Updating best epoch to be 4
+Train 5 loss: 0.35
+Train 5 token_node=73.67 token_edge=65.71 span_node=54.02 span_edge=65.13 span_node_nomatch=49.90 span_edge_nomatch=57.01
+Dev 5 Loss: 1.77
+Dev 5 token_node=61.12 token_edge=45.55 span_node=48.39 span_edge=56.89 span_node_nomatch=42.38 span_edge_nomatch=43.50
+Train 6 loss: 0.25
+Train 6 token_node=76.09 token_edge=68.61 span_node=54.98 span_edge=67.91 span_node_nomatch=51.68 span_edge_nomatch=60.68
+Dev 6 Loss: 1.38
+Dev 6 token_node=58.01 token_edge=49.71 span_node=50.00 span_edge=59.64 span_node_nomatch=44.06 span_edge_nomatch=48.33
+Updating best epoch to be 6
+Train 7 loss: 0.20
+Train 7 token_node=77.36 token_edge=69.96 span_node=55.95 span_edge=69.31 span_node_nomatch=52.60 span_edge_nomatch=62.77
+Dev 7 Loss: 1.26
+Dev 7 token_node=65.30 token_edge=58.44 span_node=50.97 span_edge=64.55 span_node_nomatch=46.93 span_edge_nomatch=53.77
+Updating best epoch to be 7
+Train 8 loss: 0.15
+Train 8 token_node=78.50 token_edge=72.24 span_node=56.21 span_edge=71.13 span_node_nomatch=52.87 span_edge_nomatch=64.44
+Dev 8 Loss: 1.27
+Dev 8 token_node=64.57 token_edge=52.06 span_node=50.22 span_edge=61.41 span_node_nomatch=46.22 span_edge_nomatch=51.52
+Train 9 loss: 0.16
+Train 9 token_node=80.81 token_edge=73.35 span_node=57.58 span_edge=72.43 span_node_nomatch=54.51 span_edge_nomatch=66.12
+Dev 9 Loss: 1.19
+Dev 9 token_node=66.80 token_edge=57.57 span_node=51.70 span_edge=66.75 span_node_nomatch=46.99 span_edge_nomatch=55.72
+Updating best epoch to be 9
+Train 10 loss: 0.14
+Train 10 token_node=81.09 token_edge=74.25 span_node=57.97 span_edge=73.73 span_node_nomatch=55.03 span_edge_nomatch=67.82
+Dev 10 Loss: 1.21
+Dev 10 token_node=62.31 token_edge=55.05 span_node=50.27 span_edge=64.86 span_node_nomatch=45.53 span_edge_nomatch=54.84
+Train 11 loss: 0.12
+Train 11 token_node=83.80 token_edge=75.27 span_node=59.01 span_edge=73.03 span_node_nomatch=56.19 span_edge_nomatch=67.75
+Dev 11 Loss: 1.00
+Dev 11 token_node=66.05 token_edge=59.61 span_node=51.88 span_edge=66.53 span_node_nomatch=47.06 span_edge_nomatch=56.27
+Updating best epoch to be 11
+Train 12 loss: 0.14
+Train 12 token_node=84.41 token_edge=77.27 span_node=59.35 span_edge=76.37 span_node_nomatch=56.86 span_edge_nomatch=71.28
+Dev 12 Loss: 1.32
+Dev 12 token_node=64.03 token_edge=61.74 span_node=49.72 span_edge=68.69 span_node_nomatch=45.60 span_edge_nomatch=57.67
+Train 13 loss: 0.13
+Train 13 token_node=85.17 token_edge=76.96 span_node=59.75 span_edge=75.27 span_node_nomatch=57.22 span_edge_nomatch=70.82
+Dev 13 Loss: 1.24
+Dev 13 token_node=67.39 token_edge=64.50 span_node=51.46 span_edge=69.37 span_node_nomatch=48.19 span_edge_nomatch=59.85
+Train 14 loss: 0.12
+Train 14 token_node=86.76 token_edge=79.91 span_node=60.24 span_edge=78.32 span_node_nomatch=57.87 span_edge_nomatch=73.64
+Dev 14 Loss: 1.17
+Dev 14 token_node=64.16 token_edge=59.84 span_node=51.37 span_edge=70.11 span_node_nomatch=45.89 span_edge_nomatch=60.22
+Restoring params to best epoch (11), with loss=1.00
+Train 0 loss: 0.36
+Train 0 token_node=27.61 token_edge=20.64 span_node=19.84 span_edge=14.53 span_node_nomatch=12.73 span_edge_nomatch=7.15
+Dev 0 Loss: 2.00
+Dev 0 token_node=54.31 token_edge=34.07 span_node=40.61 span_edge=44.45 span_node_nomatch=35.50 span_edge_nomatch=34.25
+Updating best epoch to be 0
+Train 1 loss: 0.37
+Train 1 token_node=59.42 token_edge=49.48 span_node=43.63 span_edge=47.95 span_node_nomatch=38.06 span_edge_nomatch=36.53
+Dev 1 Loss: 1.61
+Dev 1 token_node=62.45 token_edge=50.08 span_node=46.29 span_edge=49.92 span_node_nomatch=41.47 span_edge_nomatch=38.51
+Updating best epoch to be 1
+Train 2 loss: 0.30
+Train 2 token_node=65.48 token_edge=58.54 span_node=48.05 span_edge=55.69 span_node_nomatch=43.42 span_edge_nomatch=45.14
+Dev 2 Loss: 1.33
+Dev 2 token_node=65.62 token_edge=57.52 span_node=48.10 span_edge=57.24 span_node_nomatch=43.95 span_edge_nomatch=48.09
+Updating best epoch to be 2
+Train 3 loss: 0.51
+Train 3 token_node=70.49 token_edge=61.82 span_node=51.31 span_edge=60.30 span_node_nomatch=46.65 span_edge_nomatch=50.62
+Dev 3 Loss: 1.53
+Dev 3 token_node=64.78 token_edge=45.61 span_node=50.87 span_edge=51.78 span_node_nomatch=42.72 span_edge_nomatch=39.08
+Train 4 loss: 0.31
+Train 4 token_node=73.12 token_edge=64.31 span_node=53.27 span_edge=63.02 span_node_nomatch=48.89 span_edge_nomatch=54.31
+Dev 4 Loss: 1.24
+Dev 4 token_node=72.59 token_edge=64.50 span_node=52.38 span_edge=65.78 span_node_nomatch=47.54 span_edge_nomatch=54.12
+Updating best epoch to be 4
+Train 5 loss: 0.15
+Train 5 token_node=75.54 token_edge=66.47 span_node=54.40 span_edge=64.70 span_node_nomatch=50.42 span_edge_nomatch=56.59
+Dev 5 Loss: 1.00
+Dev 5 token_node=74.27 token_edge=66.66 span_node=52.93 span_edge=68.01 span_node_nomatch=49.00 span_edge_nomatch=57.89
+Updating best epoch to be 5
+Train 6 loss: 0.21
+Train 6 token_node=77.15 token_edge=68.72 span_node=55.15 span_edge=67.76 span_node_nomatch=51.66 span_edge_nomatch=60.51
+Dev 6 Loss: 1.08
+Dev 6 token_node=69.39 token_edge=63.69 span_node=50.38 span_edge=62.59 span_node_nomatch=45.79 span_edge_nomatch=51.05
+Train 7 loss: 0.24
+Train 7 token_node=78.39 token_edge=70.50 span_node=56.33 span_edge=70.43 span_node_nomatch=52.46 span_edge_nomatch=62.76
+Dev 7 Loss: 1.00
+Dev 7 token_node=72.49 token_edge=65.42 span_node=53.49 span_edge=69.20 span_node_nomatch=49.11 span_edge_nomatch=59.84
+Train 8 loss: 0.20
+Train 8 token_node=80.83 token_edge=74.22 span_node=57.55 span_edge=72.45 span_node_nomatch=53.94 span_edge_nomatch=65.69
+Dev 8 Loss: 0.90
+Dev 8 token_node=74.56 token_edge=66.44 span_node=53.48 span_edge=68.30 span_node_nomatch=47.97 span_edge_nomatch=56.67
+Updating best epoch to be 8
+Train 9 loss: 0.25
+Train 9 token_node=81.65 token_edge=73.25 span_node=58.00 span_edge=72.36 span_node_nomatch=54.78 span_edge_nomatch=66.02
+Dev 9 Loss: 0.82
+Dev 9 token_node=72.56 token_edge=69.86 span_node=52.38 span_edge=69.67 span_node_nomatch=49.34 span_edge_nomatch=59.59
+Updating best epoch to be 9
+Train 10 loss: 0.19
+Train 10 token_node=81.87 token_edge=74.33 span_node=58.34 span_edge=74.51 span_node_nomatch=55.11 span_edge_nomatch=68.43
+Dev 10 Loss: 0.89
+Dev 10 token_node=70.96 token_edge=70.58 span_node=51.44 span_edge=71.74 span_node_nomatch=47.39 span_edge_nomatch=61.48
+Train 11 loss: 0.13
+Train 11 token_node=84.20 token_edge=75.79 span_node=59.28 span_edge=75.62 span_node_nomatch=56.31 span_edge_nomatch=70.07
+Dev 11 Loss: 0.90
+Dev 11 token_node=75.47 token_edge=55.81 span_node=53.86 span_edge=64.84 span_node_nomatch=50.80 span_edge_nomatch=56.87
+Train 12 loss: 0.12
+Train 12 token_node=84.91 token_edge=76.74 span_node=59.74 span_edge=76.88 span_node_nomatch=56.95 span_edge_nomatch=71.84
+Dev 12 Loss: 0.81
+Dev 12 token_node=73.31 token_edge=67.10 span_node=52.62 span_edge=72.65 span_node_nomatch=48.82 span_edge_nomatch=63.84
+Updating best epoch to be 12
+Train 13 loss: 0.12
+Train 13 token_node=85.97 token_edge=77.73 span_node=60.09 span_edge=77.51 span_node_nomatch=57.27 span_edge_nomatch=72.33
+Dev 13 Loss: 0.83
+Dev 13 token_node=73.76 token_edge=69.99 span_node=53.88 span_edge=73.49 span_node_nomatch=50.47 span_edge_nomatch=64.90
+Train 14 loss: 0.11
+Train 14 token_node=86.33 token_edge=79.65 span_node=60.33 span_edge=79.17 span_node_nomatch=57.69 span_edge_nomatch=74.23
+Dev 14 Loss: 0.87
+Dev 14 token_node=77.79 token_edge=73.97 span_node=54.16 span_edge=75.66 span_node_nomatch=48.93 span_edge_nomatch=65.34
+Restoring params to best epoch (12), with loss=0.81
+Train 0 loss: 0.54
+Train 0 token_node=34.61 token_edge=19.95 span_node=26.86 span_edge=13.69 span_node_nomatch=19.53 span_edge_nomatch=7.65
+Dev 0 Loss: 1.85
+Dev 0 token_node=47.08 token_edge=33.42 span_node=34.09 span_edge=30.09 span_node_nomatch=28.61 span_edge_nomatch=17.93
+Updating best epoch to be 0
+Train 1 loss: 0.46
+Train 1 token_node=63.42 token_edge=42.68 span_node=46.23 span_edge=41.01 span_node_nomatch=41.27 span_edge_nomatch=30.94
+Dev 1 Loss: 1.37
+Dev 1 token_node=56.51 token_edge=29.86 span_node=43.86 span_edge=32.80 span_node_nomatch=37.95 span_edge_nomatch=25.08
+Updating best epoch to be 1
+Train 2 loss: 0.25
+Train 2 token_node=68.89 token_edge=55.24 span_node=50.05 span_edge=51.26 span_node_nomatch=45.34 span_edge_nomatch=41.94
+Dev 2 Loss: 1.02
+Dev 2 token_node=68.48 token_edge=48.54 span_node=47.61 span_edge=45.72 span_node_nomatch=42.09 span_edge_nomatch=34.56
+Updating best epoch to be 2
+Train 3 loss: 0.15
+Train 3 token_node=73.66 token_edge=61.29 span_node=53.16 span_edge=58.17 span_node_nomatch=49.23 span_edge_nomatch=49.95
+Dev 3 Loss: 0.88
+Dev 3 token_node=70.92 token_edge=56.71 span_node=49.52 span_edge=53.43 span_node_nomatch=43.63 span_edge_nomatch=43.32
+Updating best epoch to be 3
+Train 4 loss: 0.32
+Train 4 token_node=77.27 token_edge=65.91 span_node=55.13 span_edge=63.12 span_node_nomatch=51.27 span_edge_nomatch=55.06
+Dev 4 Loss: 0.89
+Dev 4 token_node=66.42 token_edge=56.13 span_node=49.86 span_edge=52.44 span_node_nomatch=44.38 span_edge_nomatch=43.38
+Train 5 loss: 0.21
+Train 5 token_node=78.94 token_edge=69.81 span_node=56.30 span_edge=67.78 span_node_nomatch=52.53 span_edge_nomatch=60.10
+Dev 5 Loss: 0.77
+Dev 5 token_node=71.60 token_edge=34.05 span_node=51.53 span_edge=40.44 span_node_nomatch=46.10 span_edge_nomatch=33.70
+Updating best epoch to be 5
+Train 6 loss: 0.16
+Train 6 token_node=80.61 token_edge=70.06 span_node=57.28 span_edge=69.13 span_node_nomatch=53.78 span_edge_nomatch=62.09
+Dev 6 Loss: 0.83
+Dev 6 token_node=72.14 token_edge=39.55 span_node=51.87 span_edge=44.55 span_node_nomatch=48.37 span_edge_nomatch=39.46
+Train 7 loss: 0.11
+Train 7 token_node=82.63 token_edge=72.69 span_node=58.09 span_edge=71.47 span_node_nomatch=54.81 span_edge_nomatch=65.09
+Dev 7 Loss: 0.58
+Dev 7 token_node=73.95 token_edge=65.97 span_node=52.75 span_edge=61.63 span_node_nomatch=48.33 span_edge_nomatch=54.41
+Updating best epoch to be 7
+Train 8 loss: 0.12
+Train 8 token_node=83.62 token_edge=74.19 span_node=58.48 span_edge=73.43 span_node_nomatch=55.40 span_edge_nomatch=67.24
+Dev 8 Loss: 0.60
+Dev 8 token_node=72.22 token_edge=56.36 span_node=50.94 span_edge=55.42 span_node_nomatch=46.39 span_edge_nomatch=47.97
+Train 9 loss: 0.08
+Train 9 token_node=84.21 token_edge=75.39 span_node=59.04 span_edge=75.02 span_node_nomatch=56.06 span_edge_nomatch=69.29
+Dev 9 Loss: 0.76
+Dev 9 token_node=74.39 token_edge=68.33 span_node=52.19 span_edge=60.20 span_node_nomatch=48.53 span_edge_nomatch=53.02
+Train 10 loss: 0.10
+Train 10 token_node=84.99 token_edge=76.48 span_node=59.42 span_edge=75.72 span_node_nomatch=56.79 span_edge_nomatch=70.31
+Dev 10 Loss: 0.60
+Dev 10 token_node=76.69 token_edge=61.75 span_node=55.07 span_edge=59.60 span_node_nomatch=50.42 span_edge_nomatch=52.13
+Train 11 loss: 0.07
+Train 11 token_node=86.85 token_edge=78.40 span_node=60.32 span_edge=77.94 span_node_nomatch=57.77 span_edge_nomatch=72.96
+Dev 11 Loss: 0.54
+Dev 11 token_node=75.73 token_edge=49.41 span_node=52.92 span_edge=54.14 span_node_nomatch=48.39 span_edge_nomatch=48.05
+Updating best epoch to be 11
+Train 12 loss: 0.13
+Train 12 token_node=86.86 token_edge=78.16 span_node=60.37 span_edge=78.22 span_node_nomatch=57.88 span_edge_nomatch=73.38
+Dev 12 Loss: 0.60
+Dev 12 token_node=71.35 token_edge=65.10 span_node=53.50 span_edge=63.36 span_node_nomatch=48.40 span_edge_nomatch=55.51
+Train 13 loss: 0.14
+Train 13 token_node=88.76 token_edge=79.88 span_node=61.10 span_edge=79.28 span_node_nomatch=58.84 span_edge_nomatch=74.87
+Dev 13 Loss: 0.54
+Dev 13 token_node=74.96 token_edge=65.33 span_node=54.10 span_edge=62.85 span_node_nomatch=49.90 span_edge_nomatch=56.34
+Updating best epoch to be 13
+Train 14 loss: 0.11
+Train 14 token_node=89.93 token_edge=81.09 span_node=61.68 span_edge=80.67 span_node_nomatch=59.61 span_edge_nomatch=76.49
+Dev 14 Loss: 0.61
+Dev 14 token_node=74.91 token_edge=59.66 span_node=53.06 span_edge=60.58 span_node_nomatch=48.55 span_edge_nomatch=52.52
+Restoring params to best epoch (13), with loss=0.54
+Train 0 loss: 0.46
+Train 0 token_node=36.05 token_edge=27.40 span_node=29.17 span_edge=27.29 span_node_nomatch=20.92 span_edge_nomatch=17.10
+Dev 0 Loss: 0.63
+Dev 0 token_node=70.21 token_edge=41.32 span_node=49.94 span_edge=35.21 span_node_nomatch=46.40 span_edge_nomatch=28.72
+Updating best epoch to be 0
+Train 1 loss: 0.44
+Train 1 token_node=63.81 token_edge=47.95 span_node=46.37 span_edge=45.46 span_node_nomatch=41.11 span_edge_nomatch=34.37
+Dev 1 Loss: 0.42
+Dev 1 token_node=77.46 token_edge=66.51 span_node=54.68 span_edge=60.28 span_node_nomatch=49.42 span_edge_nomatch=50.47
+Updating best epoch to be 1
+Train 2 loss: 0.23
+Train 2 token_node=70.05 token_edge=59.00 span_node=50.43 span_edge=55.78 span_node_nomatch=45.59 span_edge_nomatch=45.70
+Dev 2 Loss: 0.32
+Dev 2 token_node=80.51 token_edge=62.84 span_node=56.00 span_edge=59.21 span_node_nomatch=52.50 span_edge_nomatch=53.17
+Updating best epoch to be 2
+Train 3 loss: 0.19
+Train 3 token_node=74.29 token_edge=62.66 span_node=52.94 span_edge=59.66 span_node_nomatch=48.53 span_edge_nomatch=50.81
+Dev 3 Loss: 0.27
+Dev 3 token_node=82.81 token_edge=74.28 span_node=56.97 span_edge=69.31 span_node_nomatch=54.22 span_edge_nomatch=63.87
+Updating best epoch to be 3
+Train 4 loss: 0.19
+Train 4 token_node=77.82 token_edge=66.11 span_node=55.01 span_edge=64.47 span_node_nomatch=50.87 span_edge_nomatch=56.35
+Dev 4 Loss: 0.27
+Dev 4 token_node=83.47 token_edge=69.47 span_node=57.96 span_edge=63.64 span_node_nomatch=54.86 span_edge_nomatch=60.27
+Train 5 loss: 0.16
+Train 5 token_node=79.04 token_edge=67.52 span_node=56.16 span_edge=66.68 span_node_nomatch=51.89 span_edge_nomatch=58.95
+Dev 5 Loss: 0.25
+Dev 5 token_node=82.82 token_edge=81.44 span_node=57.29 span_edge=76.38 span_node_nomatch=55.45 span_edge_nomatch=70.81
+Updating best epoch to be 5
+Train 6 loss: 0.15
+Train 6 token_node=81.85 token_edge=70.69 span_node=57.01 span_edge=68.96 span_node_nomatch=53.46 span_edge_nomatch=61.95
+Dev 6 Loss: 0.29
+Dev 6 token_node=82.59 token_edge=81.59 span_node=57.20 span_edge=75.03 span_node_nomatch=55.04 span_edge_nomatch=69.09
+Train 7 loss: 0.20
+Train 7 token_node=82.59 token_edge=72.00 span_node=57.76 span_edge=70.22 span_node_nomatch=54.23 span_edge_nomatch=63.85
+Dev 7 Loss: 0.29
+Dev 7 token_node=84.01 token_edge=84.23 span_node=57.53 span_edge=80.56 span_node_nomatch=55.18 span_edge_nomatch=74.09
+Train 8 loss: 0.21
+Train 8 token_node=83.88 token_edge=73.54 span_node=58.34 span_edge=72.08 span_node_nomatch=55.11 span_edge_nomatch=66.14
+Dev 8 Loss: 0.23
+Dev 8 token_node=81.47 token_edge=79.33 span_node=57.44 span_edge=76.93 span_node_nomatch=55.27 span_edge_nomatch=72.38
+Updating best epoch to be 8
+Train 9 loss: 0.13
+Train 9 token_node=85.18 token_edge=75.50 span_node=59.22 span_edge=73.26 span_node_nomatch=55.90 span_edge_nomatch=67.60
+Dev 9 Loss: 0.19
+Dev 9 token_node=86.08 token_edge=85.71 span_node=59.18 span_edge=82.99 span_node_nomatch=57.03 span_edge_nomatch=77.98
+Updating best epoch to be 9
+Train 10 loss: 0.13
+Train 10 token_node=87.16 token_edge=76.32 span_node=60.07 span_edge=75.28 span_node_nomatch=57.21 span_edge_nomatch=70.41
+Dev 10 Loss: 0.29
+Dev 10 token_node=81.25 token_edge=84.25 span_node=56.94 span_edge=82.76 span_node_nomatch=55.28 span_edge_nomatch=76.66
+Train 11 loss: 0.12
+Train 11 token_node=87.66 token_edge=77.45 span_node=60.41 span_edge=76.05 span_node_nomatch=57.65 span_edge_nomatch=70.81
+Dev 11 Loss: 0.22
+Dev 11 token_node=83.69 token_edge=83.23 span_node=58.14 span_edge=80.98 span_node_nomatch=56.37 span_edge_nomatch=74.54
+Train 12 loss: 0.21
+Train 12 token_node=88.14 token_edge=78.91 span_node=60.70 span_edge=77.81 span_node_nomatch=58.08 span_edge_nomatch=72.80
+Dev 12 Loss: 0.28
+Dev 12 token_node=82.76 token_edge=82.29 span_node=57.93 span_edge=80.52 span_node_nomatch=56.30 span_edge_nomatch=76.15
+Train 13 loss: 0.18
+Train 13 token_node=89.78 token_edge=80.08 span_node=61.45 span_edge=78.69 span_node_nomatch=59.14 span_edge_nomatch=74.61
+Dev 13 Loss: 0.26
+Dev 13 token_node=84.35 token_edge=83.14 span_node=57.98 span_edge=79.45 span_node_nomatch=56.33 span_edge_nomatch=73.55
+Train 14 loss: 0.11
+Train 14 token_node=90.51 token_edge=81.23 span_node=61.76 span_edge=79.59 span_node_nomatch=59.55 span_edge_nomatch=75.51
+Dev 14 Loss: 0.18
+Dev 14 token_node=84.49 token_edge=83.54 span_node=58.56 span_edge=81.53 span_node_nomatch=56.58 span_edge_nomatch=76.18
+Updating best epoch to be 14
+Last epoch had best lost; consider increasing # of epochs.
+Train 0 loss: 0.51
+Train 0 token_node=37.88 token_edge=26.33 span_node=31.63 span_edge=22.85 span_node_nomatch=24.10 span_edge_nomatch=13.22
+Dev 0 Loss: 1.08
+Dev 0 token_node=79.37 token_edge=60.07 span_node=51.95 span_edge=51.24 span_node_nomatch=50.00 span_edge_nomatch=40.91
+Updating best epoch to be 0
+Train 1 loss: 0.45
+Train 1 token_node=63.98 token_edge=51.07 span_node=46.54 span_edge=46.72 span_node_nomatch=41.10 span_edge_nomatch=36.24
+Dev 1 Loss: 0.83
+Dev 1 token_node=84.70 token_edge=52.68 span_node=57.90 span_edge=52.56 span_node_nomatch=55.36 span_edge_nomatch=43.44
+Updating best epoch to be 1
+Train 2 loss: 0.36
+Train 2 token_node=70.77 token_edge=59.02 span_node=50.98 span_edge=55.99 span_node_nomatch=46.20 span_edge_nomatch=45.35
+Dev 2 Loss: 0.56
+Dev 2 token_node=86.14 token_edge=82.42 span_node=58.53 span_edge=77.58 span_node_nomatch=56.75 span_edge_nomatch=72.71
+Updating best epoch to be 2
+Train 3 loss: 0.39
+Train 3 token_node=75.48 token_edge=64.44 span_node=53.71 span_edge=61.31 span_node_nomatch=48.85 span_edge_nomatch=52.15
+Dev 3 Loss: 0.62
+Dev 3 token_node=86.50 token_edge=78.81 span_node=59.17 span_edge=76.90 span_node_nomatch=57.09 span_edge_nomatch=72.70
+Train 4 loss: 0.29
+Train 4 token_node=78.52 token_edge=66.97 span_node=55.71 span_edge=64.23 span_node_nomatch=50.83 span_edge_nomatch=55.19
+Dev 4 Loss: 0.57
+Dev 4 token_node=85.35 token_edge=83.22 span_node=56.36 span_edge=79.51 span_node_nomatch=55.24 span_edge_nomatch=76.51
+Train 5 loss: 0.29
+Train 5 token_node=80.39 token_edge=70.10 span_node=56.61 span_edge=68.31 span_node_nomatch=52.32 span_edge_nomatch=60.14
+Dev 5 Loss: 0.39
+Dev 5 token_node=89.53 token_edge=85.14 span_node=60.00 span_edge=80.23 span_node_nomatch=58.63 span_edge_nomatch=76.03
+Updating best epoch to be 5
+Train 6 loss: 0.13
+Train 6 token_node=82.57 token_edge=70.19 span_node=57.70 span_edge=68.16 span_node_nomatch=53.92 span_edge_nomatch=60.99
+Dev 6 Loss: 0.30
+Dev 6 token_node=91.88 token_edge=82.44 span_node=62.03 span_edge=83.92 span_node_nomatch=60.92 span_edge_nomatch=81.11
+Updating best epoch to be 6
+Train 7 loss: 0.21
+Train 7 token_node=84.25 token_edge=74.15 span_node=58.59 span_edge=71.94 span_node_nomatch=55.32 span_edge_nomatch=65.34
+Dev 7 Loss: 0.27
+Dev 7 token_node=88.53 token_edge=84.31 span_node=60.47 span_edge=80.00 span_node_nomatch=58.68 span_edge_nomatch=76.48
+Updating best epoch to be 7
+Train 8 loss: 0.16
+Train 8 token_node=86.14 token_edge=74.98 span_node=59.49 span_edge=73.15 span_node_nomatch=56.19 span_edge_nomatch=66.78
+Dev 8 Loss: 0.31
+Dev 8 token_node=90.20 token_edge=89.63 span_node=62.31 span_edge=86.68 span_node_nomatch=59.72 span_edge_nomatch=82.46
+Train 9 loss: 0.16
+Train 9 token_node=86.60 token_edge=76.23 span_node=59.62 span_edge=74.31 span_node_nomatch=56.57 span_edge_nomatch=68.86
+Dev 9 Loss: 0.26
+Dev 9 token_node=91.26 token_edge=90.94 span_node=62.05 span_edge=87.04 span_node_nomatch=60.83 span_edge_nomatch=82.52
+Updating best epoch to be 9
+Train 10 loss: 0.11
+Train 10 token_node=88.17 token_edge=77.43 span_node=60.46 span_edge=75.36 span_node_nomatch=57.68 span_edge_nomatch=69.90
+Dev 10 Loss: 0.23
+Dev 10 token_node=90.52 token_edge=75.26 span_node=61.79 span_edge=83.85 span_node_nomatch=59.40 span_edge_nomatch=78.83
+Updating best epoch to be 10
+Train 11 loss: 0.14
+Train 11 token_node=88.82 token_edge=77.70 span_node=60.92 span_edge=76.39 span_node_nomatch=58.00 span_edge_nomatch=71.20
+Dev 11 Loss: 0.29
+Dev 11 token_node=91.00 token_edge=87.07 span_node=62.40 span_edge=86.64 span_node_nomatch=60.01 span_edge_nomatch=82.61
+Train 12 loss: 0.07
+Train 12 token_node=90.24 token_edge=79.37 span_node=61.47 span_edge=78.37 span_node_nomatch=58.72 span_edge_nomatch=73.80
+Dev 12 Loss: 0.20
+Dev 12 token_node=91.13 token_edge=90.56 span_node=61.79 span_edge=88.94 span_node_nomatch=60.38 span_edge_nomatch=82.12
+Updating best epoch to be 12
+Train 13 loss: 0.08
+Train 13 token_node=91.08 token_edge=80.96 span_node=62.03 span_edge=79.61 span_node_nomatch=59.57 span_edge_nomatch=75.44
+Dev 13 Loss: 0.29
+Dev 13 token_node=88.17 token_edge=93.63 span_node=59.95 span_edge=90.74 span_node_nomatch=59.29 span_edge_nomatch=87.20
+Train 14 loss: 0.06
+Train 14 token_node=92.49 token_edge=80.53 span_node=62.65 span_edge=79.39 span_node_nomatch=60.39 span_edge_nomatch=75.48
+Dev 14 Loss: 0.19
+Dev 14 token_node=90.84 token_edge=93.11 span_node=62.60 span_edge=90.97 span_node_nomatch=60.22 span_edge_nomatch=86.39
+Updating best epoch to be 14
+Last epoch had best lost; consider increasing # of epochs.
+Train 0 loss: 0.46
+Train 0 token_node=32.63 token_edge=18.94 span_node=27.34 span_edge=22.02 span_node_nomatch=21.98 span_edge_nomatch=14.41
+Dev 0 Loss: 1.90
+Dev 0 token_node=68.77 token_edge=41.17 span_node=50.99 span_edge=39.56 span_node_nomatch=45.35 span_edge_nomatch=29.24
+Updating best epoch to be 0
+Train 1 loss: 0.39
+Train 1 token_node=62.50 token_edge=47.02 span_node=46.45 span_edge=44.16 span_node_nomatch=41.98 span_edge_nomatch=35.16
+Dev 1 Loss: 1.53
+Dev 1 token_node=76.05 token_edge=69.96 span_node=53.84 span_edge=64.23 span_node_nomatch=49.36 span_edge_nomatch=54.68
+Updating best epoch to be 1
+Train 2 loss: 0.34
+Train 2 token_node=70.48 token_edge=59.52 span_node=51.10 span_edge=54.78 span_node_nomatch=46.54 span_edge_nomatch=45.34
+Dev 2 Loss: 1.24
+Dev 2 token_node=80.08 token_edge=63.78 span_node=56.67 span_edge=59.70 span_node_nomatch=53.48 span_edge_nomatch=53.69
+Updating best epoch to be 2
+Train 3 loss: 0.33
+Train 3 token_node=77.18 token_edge=64.65 span_node=54.60 span_edge=61.29 span_node_nomatch=49.97 span_edge_nomatch=52.48
+Dev 3 Loss: 1.24
+Dev 3 token_node=79.91 token_edge=70.97 span_node=57.13 span_edge=67.58 span_node_nomatch=51.58 span_edge_nomatch=58.89
+Updating best epoch to be 3
+Train 4 loss: 0.19
+Train 4 token_node=80.12 token_edge=66.58 span_node=56.27 span_edge=64.39 span_node_nomatch=52.50 span_edge_nomatch=56.98
+Dev 4 Loss: 1.00
+Dev 4 token_node=85.25 token_edge=71.79 span_node=60.10 span_edge=70.81 span_node_nomatch=55.69 span_edge_nomatch=64.41
+Updating best epoch to be 4
+Train 5 loss: 0.19
+Train 5 token_node=82.28 token_edge=70.45 span_node=57.27 span_edge=67.48 span_node_nomatch=53.42 span_edge_nomatch=60.33
+Dev 5 Loss: 0.95
+Dev 5 token_node=84.12 token_edge=65.96 span_node=58.62 span_edge=63.02 span_node_nomatch=54.90 span_edge_nomatch=57.55
+Updating best epoch to be 5
+Train 6 loss: 0.17
+Train 6 token_node=84.77 token_edge=72.27 span_node=58.79 span_edge=70.61 span_node_nomatch=55.29 span_edge_nomatch=64.08
+Dev 6 Loss: 0.82
+Dev 6 token_node=85.87 token_edge=76.06 span_node=59.94 span_edge=77.10 span_node_nomatch=56.01 span_edge_nomatch=71.38
+Updating best epoch to be 6
+Train 7 loss: 0.14
+Train 7 token_node=85.14 token_edge=71.64 span_node=59.10 span_edge=68.96 span_node_nomatch=55.62 span_edge_nomatch=63.21
+Dev 7 Loss: 0.70
+Dev 7 token_node=87.89 token_edge=77.90 span_node=60.92 span_edge=78.61 span_node_nomatch=57.29 span_edge_nomatch=71.71
+Updating best epoch to be 7
+Train 8 loss: 0.10
+Train 8 token_node=85.68 token_edge=75.24 span_node=59.25 span_edge=73.57 span_node_nomatch=56.12 span_edge_nomatch=67.81
+Dev 8 Loss: 0.77
+Dev 8 token_node=87.21 token_edge=77.27 span_node=60.96 span_edge=78.10 span_node_nomatch=56.82 span_edge_nomatch=72.19
+Train 9 loss: 0.08
+Train 9 token_node=88.20 token_edge=75.74 span_node=60.53 span_edge=73.93 span_node_nomatch=57.55 span_edge_nomatch=68.44
+Dev 9 Loss: 0.66
+Dev 9 token_node=88.74 token_edge=79.27 span_node=60.77 span_edge=79.67 span_node_nomatch=57.05 span_edge_nomatch=73.49
+Updating best epoch to be 9
+Train 10 loss: 0.07
+Train 10 token_node=88.69 token_edge=78.13 span_node=60.62 span_edge=75.97 span_node_nomatch=57.61 span_edge_nomatch=70.72
+Dev 10 Loss: 0.66
+Dev 10 token_node=88.25 token_edge=74.18 span_node=61.02 span_edge=77.08 span_node_nomatch=58.13 span_edge_nomatch=73.08
+Train 11 loss: 0.06
+Train 11 token_node=90.17 token_edge=78.53 span_node=61.19 span_edge=76.26 span_node_nomatch=58.69 span_edge_nomatch=71.72
+Dev 11 Loss: 0.75
+Dev 11 token_node=88.39 token_edge=75.55 span_node=60.98 span_edge=78.52 span_node_nomatch=57.33 span_edge_nomatch=72.49
+Train 12 loss: 0.11
+Train 12 token_node=90.48 token_edge=79.63 span_node=61.61 span_edge=77.89 span_node_nomatch=59.39 span_edge_nomatch=74.10
+Dev 12 Loss: 0.82
+Dev 12 token_node=86.35 token_edge=79.09 span_node=59.91 span_edge=80.55 span_node_nomatch=56.73 span_edge_nomatch=74.44
+Train 13 loss: 0.08
+Train 13 token_node=91.28 token_edge=80.71 span_node=62.21 span_edge=78.51 span_node_nomatch=59.73 span_edge_nomatch=74.14
+Dev 13 Loss: 0.69
+Dev 13 token_node=88.30 token_edge=80.29 span_node=60.16 span_edge=81.74 span_node_nomatch=57.48 span_edge_nomatch=76.92
+Train 14 loss: 0.12
+Train 14 token_node=91.58 token_edge=81.72 span_node=62.27 span_edge=79.57 span_node_nomatch=60.18 span_edge_nomatch=75.70
+Dev 14 Loss: 0.75
+Dev 14 token_node=84.61 token_edge=78.54 span_node=58.68 span_edge=80.87 span_node_nomatch=55.18 span_edge_nomatch=74.05
+Restoring params to best epoch (9), with loss=0.66
+Train 0 loss: 0.68
+Train 0 token_node=42.33 token_edge=29.42 span_node=31.52 span_edge=26.33 span_node_nomatch=26.80 span_edge_nomatch=17.42
+Dev 0 Loss: 1.12
+Dev 0 token_node=57.95 token_edge=35.30 span_node=44.28 span_edge=42.31 span_node_nomatch=33.86 span_edge_nomatch=32.70
+Updating best epoch to be 0
+Train 1 loss: 0.37
+Train 1 token_node=66.00 token_edge=51.80 span_node=48.33 span_edge=48.46 span_node_nomatch=43.36 span_edge_nomatch=38.40
+Dev 1 Loss: 0.75
+Dev 1 token_node=74.58 token_edge=63.58 span_node=51.24 span_edge=56.26 span_node_nomatch=46.92 span_edge_nomatch=45.39
+Updating best epoch to be 1
+Train 2 loss: 0.18
+Train 2 token_node=72.66 token_edge=60.19 span_node=52.10 span_edge=56.97 span_node_nomatch=47.95 span_edge_nomatch=48.69
+Dev 2 Loss: 0.74
+Dev 2 token_node=78.39 token_edge=64.39 span_node=53.83 span_edge=62.43 span_node_nomatch=47.86 span_edge_nomatch=50.95
+Updating best epoch to be 2
+Train 3 loss: 0.28
+Train 3 token_node=78.51 token_edge=65.90 span_node=55.48 span_edge=63.93 span_node_nomatch=51.25 span_edge_nomatch=56.17
+Dev 3 Loss: 0.72
+Dev 3 token_node=78.11 token_edge=66.17 span_node=53.28 span_edge=62.66 span_node_nomatch=49.11 span_edge_nomatch=53.06
+Updating best epoch to be 3
+Train 4 loss: 0.19
+Train 4 token_node=81.98 token_edge=70.18 span_node=56.98 span_edge=66.80 span_node_nomatch=53.38 span_edge_nomatch=60.24
+Dev 4 Loss: 0.48
+Dev 4 token_node=83.11 token_edge=72.52 span_node=56.01 span_edge=70.59 span_node_nomatch=52.84 span_edge_nomatch=62.54
+Updating best epoch to be 4
+Train 5 loss: 0.23
+Train 5 token_node=84.86 token_edge=69.98 span_node=58.76 span_edge=67.85 span_node_nomatch=55.13 span_edge_nomatch=61.41
+Dev 5 Loss: 0.50
+Dev 5 token_node=85.74 token_edge=76.00 span_node=57.81 span_edge=72.28 span_node_nomatch=54.28 span_edge_nomatch=64.29
+Train 6 loss: 0.19
+Train 6 token_node=85.96 token_edge=74.38 span_node=59.48 span_edge=72.07 span_node_nomatch=56.11 span_edge_nomatch=66.04
+Dev 6 Loss: 0.57
+Dev 6 token_node=83.74 token_edge=71.99 span_node=57.90 span_edge=70.85 span_node_nomatch=53.00 span_edge_nomatch=61.68
+Train 7 loss: 0.13
+Train 7 token_node=87.61 token_edge=75.15 span_node=60.48 span_edge=73.42 span_node_nomatch=57.45 span_edge_nomatch=68.15
+Dev 7 Loss: 0.39
+Dev 7 token_node=85.75 token_edge=79.07 span_node=57.88 span_edge=74.63 span_node_nomatch=54.46 span_edge_nomatch=67.75
+Updating best epoch to be 7
+Train 8 loss: 0.14
+Train 8 token_node=88.98 token_edge=77.66 span_node=60.98 span_edge=74.89 span_node_nomatch=58.14 span_edge_nomatch=69.85
+Dev 8 Loss: 0.52
+Dev 8 token_node=81.51 token_edge=73.95 span_node=56.54 span_edge=73.93 span_node_nomatch=51.31 span_edge_nomatch=63.21
+Train 9 loss: 0.12
+Train 9 token_node=90.02 token_edge=78.79 span_node=61.43 span_edge=76.66 span_node_nomatch=58.61 span_edge_nomatch=71.77
+Dev 9 Loss: 0.39
+Dev 9 token_node=84.03 token_edge=79.27 span_node=57.37 span_edge=77.43 span_node_nomatch=54.02 span_edge_nomatch=67.94
+Updating best epoch to be 9
+Train 10 loss: 0.10
+Train 10 token_node=90.87 token_edge=79.65 span_node=61.92 span_edge=77.80 span_node_nomatch=59.31 span_edge_nomatch=73.58
+Dev 10 Loss: 0.38
+Dev 10 token_node=86.22 token_edge=78.74 span_node=59.34 span_edge=75.91 span_node_nomatch=55.70 span_edge_nomatch=69.65
+Updating best epoch to be 10
+Train 11 loss: 0.06
+Train 11 token_node=91.80 token_edge=80.14 span_node=62.28 span_edge=78.30 span_node_nomatch=59.91 span_edge_nomatch=74.06
+Dev 11 Loss: 0.48
+Dev 11 token_node=83.35 token_edge=76.93 span_node=57.44 span_edge=72.62 span_node_nomatch=54.42 span_edge_nomatch=64.33
+Train 12 loss: 0.11
+Train 12 token_node=92.51 token_edge=82.41 span_node=62.72 span_edge=80.23 span_node_nomatch=60.40 span_edge_nomatch=76.14
+Dev 12 Loss: 0.42
+Dev 12 token_node=83.47 token_edge=77.68 span_node=56.53 span_edge=75.43 span_node_nomatch=54.59 span_edge_nomatch=68.14
+Train 13 loss: 0.11
+Train 13 token_node=93.03 token_edge=82.82 span_node=62.88 span_edge=80.41 span_node_nomatch=60.98 span_edge_nomatch=77.37
+Dev 13 Loss: 0.47
+Dev 13 token_node=82.36 token_edge=76.55 span_node=55.21 span_edge=71.56 span_node_nomatch=52.58 span_edge_nomatch=64.59
+Train 14 loss: 0.06
+Train 14 token_node=93.39 token_edge=82.18 span_node=63.22 span_edge=80.44 span_node_nomatch=61.36 span_edge_nomatch=77.11
+Dev 14 Loss: 0.39
+Dev 14 token_node=85.13 token_edge=81.76 span_node=58.55 span_edge=79.54 span_node_nomatch=55.02 span_edge_nomatch=71.33
+Restoring params to best epoch (10), with loss=0.38
+Train 0 loss: 0.21
+Train 0 token_node=43.39 token_edge=27.31 span_node=34.58 span_edge=28.18 span_node_nomatch=29.34 span_edge_nomatch=20.90
+Train 1 loss: 0.03
+Train 1 token_node=68.42 token_edge=52.07 span_node=49.72 span_edge=48.19 span_node_nomatch=45.47 span_edge_nomatch=39.78
+Train 2 loss: 0.08
+Train 2 token_node=76.24 token_edge=61.09 span_node=54.39 span_edge=55.72 span_node_nomatch=50.25 span_edge_nomatch=48.07
+Train 3 loss: 0.04
+Train 3 token_node=80.91 token_edge=65.43 span_node=56.62 span_edge=61.33 span_node_nomatch=52.79 span_edge_nomatch=54.21
+Train 4 loss: 0.04
+Train 4 token_node=83.88 token_edge=71.30 span_node=58.23 span_edge=66.96 span_node_nomatch=54.85 span_edge_nomatch=60.89
+Train 5 loss: 0.04
+Train 5 token_node=86.12 token_edge=73.07 span_node=59.28 span_edge=69.89 span_node_nomatch=56.01 span_edge_nomatch=64.15
+Train 6 loss: 0.02
+Train 6 token_node=86.75 token_edge=75.29 span_node=59.61 span_edge=71.64 span_node_nomatch=56.59 span_edge_nomatch=66.28
+Train 7 loss: 0.04
+Train 7 token_node=88.56 token_edge=76.31 span_node=60.64 span_edge=73.73 span_node_nomatch=57.75 span_edge_nomatch=68.72
+Train 8 loss: 0.03
+Train 8 token_node=89.23 token_edge=78.37 span_node=61.14 span_edge=75.38 span_node_nomatch=58.17 span_edge_nomatch=70.43
+Train 9 loss: 0.04
+Train 9 token_node=90.08 token_edge=80.04 span_node=61.27 span_edge=77.79 span_node_nomatch=58.72 span_edge_nomatch=73.42
+Train 10 loss: 0.04
+Train 10 token_node=90.74 token_edge=79.41 span_node=61.80 span_edge=77.49 span_node_nomatch=59.46 span_edge_nomatch=73.24
+Last epoch had best lost; consider increasing # of epochs.
+Initialized embeddings.
+Initialized embeddings.
