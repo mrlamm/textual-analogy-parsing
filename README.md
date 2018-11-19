@@ -24,7 +24,7 @@ Some statistics:
 
 Here, *Count* refers to the number of frames and *Length* refers to the number of values compared within a given frame. *Av(erage)* is the per-sentence average over a given dataset and *max(imum)* is the maximum over all sentences. *Tot(al)* is the total number of frames in a given dataset.
 
-The `data/` folder contains four files: `train.xml` and `test.xml` are human-readable versions of the train and test sets, `train.json` and `annotated_test.json` are easy-to-load versions.
+The `data/` folder contains four files: `train.xml` and `test.xml` are human-readable versions of the train and test sets; `train.json` and `test.json` are easy-to-load versions.
 
 ## Reproducing results
 You can reproduce our results using our published models (located in `models/`) by simply running `make` in the `src/` folder.
