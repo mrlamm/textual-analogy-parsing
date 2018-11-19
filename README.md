@@ -1,6 +1,5 @@
 # Textual Analogy Parsing
 
-
 Textual Analogy Parsing (TAP) is the task of identifying analogy frames from text. Analogy frames are a discourse-aware shallow semantic representation that highlights points of similarity and difference between analogous facts. 
 
 Given the following sentence
@@ -19,13 +18,13 @@ TAP frames can be used to automatically plot quantitative facts. The following w
 
 We report experiments in the paper on a hand-annotated dataset of quantitative analogy frames identified in the Penn Treebank WSJ Corpus. 
 
-The data are available for download here.
-
 Some statistics: 
 
 <p align="center"> <img src="figures/dataset_stats.png"></p>
 
 Here, *Count* refers to the number of frames and *Length* refers to the number of values compared within a given frame. *Av(erage)* is the per-sentence average over a given dataset and *max(imum)* is the maximum over all sentences. *Tot(al)* is the total number of frames in a given dataset.
+
+The `data/` folder contains four files: `train.xml` and `test.xml` are human-readable versions of the train and test sets, `train.json` and `annotated_test.json` are easy-to-load versions.
 
 ## Reproducing results
 You can reproduce our results using our published models (located in `models/`) by simply running `make` in the `src/` folder.
