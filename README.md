@@ -75,6 +75,7 @@ To use, simply run the command `python convert.py graph2standoff -i <predictions
 
 ## Citing Us
 If you use our data, or use our models for building on TAP or a related task, please be sure to cite the most recent version of our paper from EMNLP 2018.
+
 `@inproceedings{lamm2018analogies,
  author = {Lamm, Matthew and Chaganty, Arun Tejasvi and Manning, Chrisopher D. and Jurafsky, Dan and Liang, Percy},
  booktitle = {Empirical Methods in Natural Language Processing},
