@@ -72,3 +72,15 @@ We also provide a utility that converts any output `.jsonl` file to the [brat st
 <p align="center"> <img src="figures/brat.png"></p>
 
 To use, simply run the command `python convert.py graph2standoff -i <predictions.jsonl> -o <prefix>`. The command will generate a `<prefix>.txt` and `<prefix>.ann` file that can be visualized by [brat annotation tool](http://brat.nlplab.org/).
+
+## Citing Us
+If you use our data, or use our models for building on TAP or a related task, please be sure to cite the most recent version of our paper from EMNLP 2018.
+`@inproceedings{lamm2018analogies,
+ author = {Lamm, Matthew and Chaganty, Arun Tejasvi and Manning, Chrisopher D. and Jurafsky, Dan and Liang, Percy},
+ booktitle = {Empirical Methods in Natural Language Processing},
+ location = {Brussels},
+ title = {Textual Analogy Parsing: What's Shared and What's Compared among Analogous Facts},
+ url = {https://nlp.stanford.edu/pubs/lamm2018analogies.pdf},
+ year = {2018}
+}`
+
