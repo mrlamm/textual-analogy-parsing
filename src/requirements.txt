@@ -9,7 +9,7 @@ ipython-genutils==0.2.0
 jedi==0.11.0
 munkres==1.0.12
 nltk==3.2.5
-numpy==1.15.4
+numpy==1.22.0
 parso==0.1.0
 pexpect==4.2.1
 pickleshare==0.7.4
